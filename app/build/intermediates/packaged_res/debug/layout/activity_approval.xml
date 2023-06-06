@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Approval">
+
+    <!--    AppBar Layout       -->
+    <RelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Lapis_Blue">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+    <!--    Text headline  -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_weight="6">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Approval"-->
+<!--            android:textSize="25dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </LinearLayout>-->
+
+    <!--    Input fields   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Title"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Mrs."
+                            android:textColor="@color/black"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Name"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Full Name"
+                            android:textColor="@color/black"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Visitor Document"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/visitordocument"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Document"
+                            android:textColor="@color/black"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Department"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/department"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Department"
+                            android:textColor="@color/black"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Purpose"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/purpose"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Purpose"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Visiting(Employee)"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/visitingemployee"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Employee"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Mobile Number"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="+91-9955532443"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Address"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="Address"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="In Time"
+                            android:layout_weight="1"
+                            android:paddingVertical="18dp"
+                            android:gravity="left"
+                            />
+
+                        <TextView
+                            android:id="@+id/checkin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:paddingVertical="18dp"
+                            android:hint="CheckIn Time"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/check" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="1">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/close" />
+
+          </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

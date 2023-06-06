@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.visitormanagement"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.visitormanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.visitormanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:5:5-50:19
+18        android:allowBackup="true"
+18-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:fullBackupContent="@xml/backup_rules"
+22-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:8:9-54
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:9:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:10:9-41
+25        android:supportsRtl="true"
+25-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:11:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.VisitorManagement" >
+27-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:12:9-55
+28        <activity
+28-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:14:9-16:40
+29            android:name="com.example.visitormanagement.VisitorDetailsDuplicate"
+29-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:15:13-52
+30            android:exported="false" />
+30-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:16:13-37
+31        <activity
+31-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:17:9-19:40
+32            android:name="com.example.visitormanagement.Photo"
+32-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:18:13-34
+33            android:exported="false" />
+33-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:19:13-37
+34        <activity
+34-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:20:9-22:40
+35            android:name="com.example.visitormanagement.VisitorListPhoto"
+35-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:21:13-45
+36            android:exported="false" />
+36-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:22:13-37
+37        <activity
+37-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:23:9-25:40
+38            android:name="com.example.visitormanagement.Approval"
+38-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:24:13-37
+39            android:exported="false" />
+39-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:25:13-37
+40        <activity
+40-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:26:9-28:40
+41            android:name="com.example.visitormanagement.VisitorCamCheckOutVerify"
+41-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:27:13-53
+42            android:exported="false" />
+42-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:28:13-37
+43        <activity
+43-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:29:9-31:40
+44            android:name="com.example.visitormanagement.PendingApprovalDetails"
+44-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:30:13-51
+45            android:exported="false" />
+45-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:31:13-37
+46        <activity
+46-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:32:9-34:40
+47            android:name="com.example.visitormanagement.NewAddVisitor"
+47-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:33:13-42
+48            android:exported="false" />
+48-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:34:13-37
+49        <activity
+49-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:35:9-37:40
+50            android:name="com.example.visitormanagement.VisitorDetails"
+50-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:36:13-43
+51            android:exported="false" />
+51-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:37:13-37
+52        <activity
+52-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:38:9-40:40
+53            android:name="com.example.visitormanagement.VisitorList"
+53-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:39:13-40
+54            android:exported="false" />
+54-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:40:13-37
+55        <activity
+55-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:41:9-49:20
+56            android:name="com.example.visitormanagement.MainActivity"
+56-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:42:13-41
+57            android:exported="true" >
+57-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:43:13-36
+58            <intent-filter>
+58-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:44:13-48:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:45:17-69
+59-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:45:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:47:17-77
+61-->C:\Users\Rafeeuddin Khan\VisitorManagement\app\src\main\AndroidManifest.xml:47:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+67            android:authorities="com.example.visitormanagement.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rafeeuddin Khan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+75        </provider>
+76    </application>
+77
+78</manifest>

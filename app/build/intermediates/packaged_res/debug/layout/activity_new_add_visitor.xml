@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".NewAddVisitor"
+    android:orientation="vertical">
+
+    <!--    AppBar Layout       -->
+    <RelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Lapis_Blue">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+
+    <!--    Text headline  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Visitor"
+            android:textSize="25dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!--    Input fields   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+<!--                Photo           -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/bg_photo"
+                        android:src="@drawable/icons_person"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_input"
+                    android:textColorHint="@color/black"
+                    >
+
+                    <Spinner
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Document"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_input"
+                    android:textColorHint="@color/black"
+                    >
+
+                    <Spinner
+                        android:id="@+id/visitordocument"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/department"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:padding="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/custom_input"
+                        android:paddingStart="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Purpose"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/purpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:padding="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/custom_input"
+                        android:paddingStart="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visiting(Employee)"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_input"
+                    android:textColorHint="@color/black"
+                    >
+
+                    <Spinner
+                        android:id="@+id/visitingemployee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:padding="10dp"
+                        android:maxLength="10"
+                        android:inputType="phone"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/custom_input"
+                        android:paddingStart="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:padding="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/custom_input"
+                        android:paddingStart="10dp"/>
+
+<!--                Start Appoint Date and Time             -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appoint Date (In)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appoint Time (In)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <EditText
+                       android:id="@+id/date"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:hint="Select Date"
+                       android:layout_weight="1"
+                       android:layout_marginStart="10dp"
+                       android:paddingStart="10dp"
+                       android:clickable="false"
+                       android:focusable="false"
+                       android:background="@drawable/custom_input"
+                       />
+
+                   <EditText
+                       android:id="@+id/time1"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:hint="Choose the time"
+                       android:layout_weight="1"
+                       android:layout_marginStart="10dp"
+                       android:paddingStart="10dp"
+                       android:clickable="false"
+                       android:focusable="false"
+                       android:background="@drawable/custom_input"
+                       />
+
+
+               </LinearLayout>
+
+<!--                End Appoint Date and Time               -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appoint Date (Out)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appoint Time (Out)"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Select Date"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:paddingStart="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="@drawable/custom_input"
+                        />
+
+                    <EditText
+                        android:id="@+id/time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Choose the time"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:paddingStart="10dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="@drawable/custom_input"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!--    Button    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
